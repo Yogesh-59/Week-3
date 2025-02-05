@@ -1,0 +1,3 @@
+Hello, This is sample text file.
+This program Convert Byte Stream to Character Stream Using InputStreamReader
+The file contains data encoded in a specific charset (e.g., UTF-8)
