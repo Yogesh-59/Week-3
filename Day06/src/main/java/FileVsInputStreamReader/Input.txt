@@ -1,0 +1,45 @@
+A lot of students get confused while understanding the concept of time complexity, but in this article, we will explain it with a very simple example.
+
+Q. Imagine a classroom of 100 students in which you gave your pen to one person. You have to find that pen without knowing to whom you gave it.
+
+Here are some ways to find the pen and what the O order is.
+
+O(n2): You go and ask the first person in the class if he has the pen. Also, you ask this person about the other 99 people in the classroom if they have that pen and so on,
+This is what we call O(n2).
+O(n): Going and asking each student individually is O(N).
+O(log n): Now I divide the class into two groups, then ask: “Is it on the left side, or the right side of the classroom?” Then I take that group and divide it into two and ask again, and so on. Repeat the process till you are left with one student who has your pen. This is what you mean by O(log n).
+I might need to do:
+
+The O(n2) searches if only one student knows on which student the pen is hidden.
+The O(n) if one student had the pen and only they knew it.
+The O(log n) search if all the students knew, but would only tell me if I guessed the right side.
+The above O -> is called Big – O which is an asymptotic notation. There are other asymptotic notations like theta and Omega.
+
+
+NOTE: We are interested in the rate of growth over time with respect to the inputs taken during the program execution.
+
+Is the Time Complexity of an Algorithm/Code the same as the Running/Execution Time of Code?
+The Time Complexity of an algorithm/code is not equal to the actual time required to execute a particular code, but the number of times a statement executes. We can prove this by using the time command.
+
+For example: Write code in C/C++ or any other language to find the maximum between N numbers, where N varies from 10, 100, 1000, and 10000. For Linux based operating system (Fedora or Ubuntu), use the below commands:
+
+To compile the program: gcc program.c – o program
+To execute the program: time ./program
+
+
+You will get surprising results i.e.:
+
+For N = 10: you may get 0.5 ms time,
+For N = 10,000: you may get 0.2 ms time.
+Also, you will get different timings on different machines. Even if you will not get the same timings on the same machine for the same code, the reason behind that is the current network load.
+So, we can say that the actual time required to execute code is machine-dependent (whether you are using Pentium 1 or Pentium 5) and also it considers network load if your machine is in LAN/WAN.
+
+What is meant by the Time Complexity of an Algorithm?
+Now, the question arises if time complexity is not the actual time required to execute the code, then what is it?
+
+The answer is:
+
+Instead of measuring actual time required in executing each statement in the code, Time Complexity considers how many times each statement executes.
+
+
+Example 1: Consider the below simple code to print Hello World
